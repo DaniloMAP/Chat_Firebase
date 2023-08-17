@@ -18,17 +18,16 @@ class ChatScreen extends StatefulWidget {
 
 class _ChatScreenState extends State<ChatScreen> {
   final GoogleSignIn googleSignIn = GoogleSignIn();
-  final GlobalKey<ScaffoldState> _scaffoldKey =
-      GlobalKey<ScaffoldState>(); // Corrigido
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
-  late User _currentUser;
+  late User? _currentUser;
 
   @override
   void initState() {
     super.initState();
     FirebaseAuth.instance.authStateChanges().listen((user) {
       setState(() {
-        _currentUser = user!;
+        _currentUser = user;
       });
     });
   }
@@ -63,7 +62,21 @@ class _ChatScreenState extends State<ChatScreen> {
   void _sendMessage({String? text, File? imgFile}) async {
     final User? user = await _getUser();
 
-    Map<String, dynamic> data = {};
+    if (user == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Não foi possível fazer o login, tente novamente!'),
+          backgroundColor: Colors.red,
+        ),
+      );
+      return;
+    }
+
+    Map<String, dynamic> data = {
+      "uid": user.uid,
+      "senderName": user.displayName,
+      "senderPhotoUrl": user.photoURL,
+    };
 
     // Adicione um carimbo de data/hora à mensagem
     data['timestamp'] = FieldValue.serverTimestamp();
@@ -88,6 +101,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       appBar: AppBar(
         title: Text('Olá'),
         elevation: 0,
