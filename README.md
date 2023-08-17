@@ -1,6 +1,3 @@
-Peço desculpas pelo erro. Vou corrigir o estilo das seções. Aqui está o README corrigido:
-
-
 # Chat App
 
 ## Apresentação do Projeto
@@ -71,7 +68,7 @@ Esta estrutura foi projetada para manter uma organização clara e facilitar a m
 
 ## Licença
 
-Este projeto está licenciado sob a licença [MIT]. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
 
 ---
 
