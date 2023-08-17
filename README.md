@@ -7,11 +7,12 @@ Peço desculpas pelo erro. Vou corrigir o estilo das seções. Aqui está o READ
 
 Este é um aplicativo de chat desenvolvido em Flutter que permite aos usuários trocarem mensagens de texto e imagens. O aplicativo utiliza o Firebase para autenticação de usuários, armazenamento de mensagens e imagens, além de integração com o Google Sign-In.
 
-## Estrutura
+Claro, aqui está a adaptação para deixar essa parte mais apresentável:
 
-O projeto possui a seguinte estrutura de diretórios:
+## Estrutura do Projeto
 
-```markdown
+A estrutura do projeto está organizada da seguinte forma:
+
 chat_app/
 |-- lib/
 |   |-- chat_screen.dart
@@ -21,11 +22,15 @@ chat_app/
 |-- pubspec.yaml
 ```
 
-- `lib/`: Contém os arquivos Dart do projeto.
-- `firebase_options.dart`: Arquivo de configuração do Firebase.
-- `main.dart`: Ponto de entrada do aplicativo.
-- `pubspec.yaml`: Arquivo de configuração das dependências.
+- **`lib/`**: Contém os arquivos Dart do projeto, incluindo as classes que compõem a interface do usuário e a lógica do chat.
+- **`firebase_options.dart`**: Arquivo de configuração do Firebase, onde você deve inserir suas chaves e tokens de autenticação.
+- **`main.dart`**: Ponto de entrada do aplicativo, que configura e inicializa o Flutter e o Firebase.
+- **`pubspec.yaml`**: Arquivo de configuração das dependências, listando os pacotes utilizados no projeto.
 
+Essa estrutura foi projetada para manter uma organização clara e facilitar a manutenção do código.
+```
+
+Fique à vontade para ajustar o texto conforme necessário.
 ## Dependências
 
 - [Firebase Core](https://pub.dev/packages/firebase_core): Configuração e inicialização do Firebase.
