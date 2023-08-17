@@ -9,10 +9,13 @@ Este é um aplicativo de chat desenvolvido em Flutter que permite aos usuários 
 
 Claro, aqui está a adaptação para deixar essa parte mais apresentável:
 
+Claro, aqui está a parte ajustada do seu README:
+
 ## Estrutura do Projeto
 
 A estrutura do projeto está organizada da seguinte forma:
 
+```
 chat_app/
 |-- lib/
 |   |-- chat_screen.dart
@@ -27,10 +30,8 @@ chat_app/
 - **`main.dart`**: Ponto de entrada do aplicativo, que configura e inicializa o Flutter e o Firebase.
 - **`pubspec.yaml`**: Arquivo de configuração das dependências, listando os pacotes utilizados no projeto.
 
-Essa estrutura foi projetada para manter uma organização clara e facilitar a manutenção do código.
-```
+Esta estrutura foi projetada para manter uma organização clara e facilitar a manutenção do código.
 
-Fique à vontade para ajustar o texto conforme necessário.
 ## Dependências
 
 - [Firebase Core](https://pub.dev/packages/firebase_core): Configuração e inicialização do Firebase.
