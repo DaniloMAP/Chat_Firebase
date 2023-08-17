@@ -4,10 +4,6 @@
 
 Este é um aplicativo de chat desenvolvido em Flutter que permite aos usuários trocarem mensagens de texto e imagens. O aplicativo utiliza o Firebase para autenticação de usuários, armazenamento de mensagens e imagens, além de integração com o Google Sign-In.
 
-Claro, aqui está a adaptação para deixar essa parte mais apresentável:
-
-Claro, aqui está a parte ajustada do seu README:
-
 ## Estrutura do Projeto
 
 A estrutura do projeto está organizada da seguinte forma:
